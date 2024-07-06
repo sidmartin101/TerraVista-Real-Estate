@@ -1,0 +1,229 @@
+*{
+    font-family: montserrat;
+}
+.navbar-brand span.text-warning {
+    color: rgb(63, 75, 255) !important;
+}
+.btn-warning {
+    background-color: rgb(63, 75, 255) !important;
+    border-color: rgb(0, 0, 0) !important;
+    color: white;
+  }
+.btn-warning-text-dark{
+    color: white;
+}
+body{
+    background: f1fbff;
+    background-color: lightgrey;
+}
+.learn-more-btn {
+    background-color: rgb(63, 75, 255);
+    color: white;
+    border-color: rgb(0, 0, 0);
+    transition: background-color 0.3s, color 0.3s;
+}
+.learn-more-btn:hover {
+    background-color: rgb(63, 75, 255); /* New background color on hover */
+    color: #000000; /* New text color on hover */
+}
+  
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5.text{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p.para{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light .navbar-brand{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover{
+    color: #000;
+}
+.navbar-light .navbar-nav .navbar-link{
+    color: #000;
+}
+.w-100{
+    height: 100vh;
+}
+
+.services .card-body i{
+    font-size: 50px;
+}
+
+.team .card-body i{
+    font-size: 20px;
+}
+.portfolio .card{
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.40);
+}
+
+.team .card{
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.40);
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 60px;
+}
+
+.sidebar .nav-link {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.sidebar .nav-item {
+    list-style-type: none;
+    width: 100%;
+}
+
+#menu-toggle, #menu-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#menu-close {
+    position: absolute;
+    top: 10px;
+    top: 10px;
+    color: #000;
+    font-size: 24px;
+}
+
+.menu-button {
+    display: none;
+}
+
+
+
+/* === Responsive Css === */
+
+/* Hide Navbar Links on Small Screens */
+@media (max-width: 800px) {
+    .navbar-nav .nav-item {
+      display: none;
+    }
+    .menu-button {
+      display: block;
+    }
+  }
+  
+  /* Adjust Sidebar Width for Very Small Screens */
+  @media (max-width: 400px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  
+  /* Adjust Carousel Caption Position for Small Screens */
+  @media (max-width: 768px) {
+    .carousel-caption {
+      bottom: 20px; /* Adjusted position for smaller screens */
+    }
+    .carousel-caption h5.text {
+      font-size: 28px; /* Adjusted font size for smaller screens */
+    }
+    .carousel-caption p.para {
+      width: 100%; /* Adjusted width for smaller screens */
+      max-width: 400px; /* Example: set a max width for better readability */
+      margin: 0 auto; /* Center align the paragraph */
+    }
+  }
+  
+  /* Adjust Card Icon Size in Services Section for Small Screens */
+  @media (max-width: 576px) {
+    .services .card-body i {
+      font-size: 32px; /* Adjusted icon size for smaller screens */
+      margin-bottom: 40px;
+    }
+  }
+  
+  /* Adjust Team Member Card Layout for Small Screens */
+  @media (max-width: 576px) {
+    .team .card {
+      margin-bottom: 60px; /* Adjusted margin for smaller screens */
+    }
+  }
+  
+  /* Adjust Portfolio Card Layout for Small Screens */
+  @media (max-width: 576px) {
+    #portfolio .container {
+      margin-bottom: 20px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      column-count: 1;
+    } /* Adjusted margin for smaller screens */
+    }
+
+  
+    @media (max-width: 576px) {
+        .portfolio .card{
+            margin-bottom: 60px;
+        }
+    }
+    @media (max-width: 576px) {
+        .services .card {
+            margin-bottom: 40px; /* Adjust space between service cards for smaller screens */
+        }
+    }
+
+  
